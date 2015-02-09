@@ -1,86 +1,95 @@
 package controllers;
 
-import static java.lang.System.out;
+import com.mongodb.MongoClient;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBCursor;
 
-import java.io.IOException;
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
-import java.lang.reflect.Member;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.codehaus.jackson.JsonGenerationException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
-
-import play.*;
-import play.mvc.*;
 import views.html.*;
+
+import play.mvc.*;
+
 
 public class Application extends Controller {
 
-	private static Map<String, Object> fields= new HashMap<String, Object>();
-    public static Result getjson() {
-    	
-    	try
-    	{
-    		Class c= Class.forName("controllers.User");
-    		
-    		populateHashMap(c.getDeclaredFields());
-    		String JSON=convertToJSON();
-    		return ok(getjson.render(JSON));
-    	} 
-    	catch (ClassNotFoundException x) 
-    	{
-    		x.printStackTrace();
-    	}
-		return null;
-    	
-        
-    }
-    
-    public static String convertToJSON()
-    {
-    	ObjectMapper objectMapper = new ObjectMapper();
-    	try {
-			 String JSON=objectMapper.writeValueAsString(fields);
-			 return JSON;
-		} catch (JsonGenerationException e) {
-			e.printStackTrace();
-		} catch (JsonMappingException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
+
+	
+	public static Result getEntities()
+	{
+		try
+		{
+			MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
+            String result="";
+            // Now connect to your databases
+            DB db = mongoClient.getDB( "mdmui" );
+            BasicDBObject all= new BasicDBObject();
+            BasicDBObject entity= new BasicDBObject();
+            entity.put("EntityName",1);
+            entity.put("_id",0);
+   		 	System.out.println("Connect to database successfully");
+   		 	DBCollection templates =db.getCollection("templates");
+            DBCursor cursor = templates.find(all,entity);
+            while (cursor.hasNext())
+            { 
+            	result+=cursor.next().get("EntityName");
+            	result+=",";
+            }
+            cursor.close();
+            return ok(result);
+			
+		}
+		catch(Exception e)
+		{
 			e.printStackTrace();
 		}
 		return null;
-    	
-    	
-    	
-    }
-
-    private static void populateHashMap(Member[] mbrs) {
-	//out.format("%s:%n", s);
-	for (Member mbr : mbrs) {
-	    if (mbr instanceof Field)
-	    {
-	    	String[] declaration= ((Field)mbr).toGenericString().split(" ");
-	    	fields.put(declaration[2],declaration[1]);
-	    	out.format("  %s%n", ((Field)mbr).toGenericString());
-	    }
 	}
-	if (mbrs.length == 0)
-	    out.format("  -- No Fields -- ");
-	out.format("%n");
-    }
-
-
-}
-
-class User
-{
-    public String email;
-    public String password;
+	
+	public static Result getData(String EntityName)
+	{
+		try
+		{   
+			//out.println(message);
+    		// To connect to mongodb server
+            MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
+            String result="";
+            // Now connect to your databases
+            DB db = mongoClient.getDB( "mdmui" );
+            BasicDBObject b= new BasicDBObject();
+            b.put("EntityName", EntityName);
+   		 	System.out.println("Connect to database successfully");
+   		 	DBCollection mdmui=db.getCollection("templates");
+            DBCursor cursor = mdmui.find(b);
+            while (cursor.hasNext()) 
+            { 
+            	result+=cursor.next();     
+            }
+            cursor.close();
+            return ok(result);
+   		 
+         }
+		catch(Exception e)
+		{
+			e.printStackTrace();
+   	  	}
+		return null;
+      }
+	
+	public static Result getForm()
+	{
+		try
+		{
+			return ok(getForm.render());
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			
+		}
+			return null;
+		
+	}
 
 }

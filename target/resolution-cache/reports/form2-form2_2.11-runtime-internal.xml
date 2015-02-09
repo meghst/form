@@ -7,15 +7,16 @@
 		revision="1.0-SNAPSHOT"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar"
-		date="20150203135346"/>
+		date="20150205123104"/>
 	<dependencies>
-		<module organisation="org.webjars" name="requirejs">
-			<revision name="2.1.11-1" status="release" pubdate="20140228231616" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="68">
-				<metadata-artifact status="no" details="" size="3347" time="0" location="/Users/meghana.thiyyakat/.ivy2/cache/org.webjars/requirejs/ivy-2.1.11-1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/webjars/requirejs/2.1.11-1/requirejs-2.1.11-1.pom"/>
-				<caller organisation="form2" name="form2_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.1.11-1" rev-constraint-default="2.1.11-1" rev-constraint-dynamic="2.1.11-1" callerrev="1.0-SNAPSHOT"/>
+		<module organisation="org.webjars" name="jquery">
+			<revision name="2.0.3" status="release" pubdate="20130709014551" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="68">
+				<license name="MIT License" url="https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3145" time="0" location="/Users/meghana.thiyyakat/.ivy2/cache/org.webjars/jquery/ivy-2.0.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/webjars/jquery/2.0.3/jquery-2.0.3.pom"/>
+				<caller organisation="form2" name="form2_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.0.3" rev-constraint-default="2.0.3" rev-constraint-dynamic="2.0.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="requirejs" type="jar" ext="jar" status="no" details="" size="29294" time="0" location="/Users/meghana.thiyyakat/.ivy2/cache/org.webjars/requirejs/jars/requirejs-2.1.11-1.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/webjars/requirejs/2.1.11-1/requirejs-2.1.11-1.jar"/>
+					<artifact name="jquery" type="jar" ext="jar" status="no" details="" size="104150" time="0" location="/Users/meghana.thiyyakat/.ivy2/cache/org.webjars/jquery/jars/jquery-2.0.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/webjars/jquery/2.0.3/jquery-2.0.3.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>

@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@713be89[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f2c2846[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.1 in sbt-chain[0m
@@ -1071,15 +1071,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.webjars#requirejs;2.1.11-1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.webjars#requirejs;2.1.11-1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.webjars#requirejs;2.1.11-1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.webjars#requirejs;2.1.11-1[0m
-[0m[[0mdebug[0m] [0m	found org.webjars#requirejs;2.1.11-1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.webjars#jquery;2.0.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.webjars#jquery;2.0.3 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.webjars#jquery;2.0.3[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.webjars#jquery;2.0.3[0m
+[0m[[0mdebug[0m] [0m	found org.webjars#jquery;2.0.3 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [compile][0m
@@ -1705,10 +1705,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [runtime][0m
@@ -2335,10 +2335,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.7 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.11;2.3.7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.11;2.3.7 {test=[default(compile)]}[0m
@@ -4313,10 +4313,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -4945,10 +4945,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [test-internal][0m
@@ -5577,10 +5577,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.7 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.7 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.3.7 [test->compile][0m
@@ -7718,10 +7718,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'echo-trace-test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [echo-trace-test][0m
@@ -8351,10 +8351,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#angularjs;1.3.0-beta.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#requirejs;2.1.11-1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies form2#form2_2.11;1.0-SNAPSHOT->org.webjars#jquery;2.0.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [test-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for form2#form2_2.11;1.0-SNAPSHOT [test][0m
@@ -9440,7 +9440,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-cache_2.11;2.3.7!play-cache_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-ws_2.11;2.3.7!play-java-ws_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#angularjs;1.3.0-beta.2!angularjs.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#requirejs;2.1.11-1!requirejs.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#jquery;2.0.3!jquery.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.1!commons-lang3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#build-link;2.3.7!build-link.jar[0m
@@ -9575,7 +9575,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.11!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.7.3!aspectjweaver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#trace-sigar-libs;0.1.7!trace-sigar-libs.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1893ms :: artifacts dl 65ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3371ms :: artifacts dl 232ms[0m
 [0m[[0mdebug[0m] [0m	report for form2#form2_2.11;1.0-SNAPSHOT compile produced in /Users/meghana.thiyyakat/Documents/workspace/form2/target/resolution-cache/reports/form2-form2_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for form2#form2_2.11;1.0-SNAPSHOT runtime produced in /Users/meghana.thiyyakat/Documents/workspace/form2/target/resolution-cache/reports/form2-form2_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for form2#form2_2.11;1.0-SNAPSHOT test produced in /Users/meghana.thiyyakat/Documents/workspace/form2/target/resolution-cache/reports/form2-form2_2.11-test.xml[0m
@@ -9593,5 +9593,5 @@
 [0m[[0mdebug[0m] [0m	report for form2#form2_2.11;1.0-SNAPSHOT echo-trace-test produced in /Users/meghana.thiyyakat/Documents/workspace/form2/target/resolution-cache/reports/form2-form2_2.11-echo-trace-test.xml[0m
 [0m[[0mdebug[0m] [0m	report for form2#form2_2.11;1.0-SNAPSHOT echo-weave produced in /Users/meghana.thiyyakat/Documents/workspace/form2/target/resolution-cache/reports/form2-form2_2.11-echo-weave.xml[0m
 [0m[[0mdebug[0m] [0m	report for form2#form2_2.11;1.0-SNAPSHOT echo-sigar produced in /Users/meghana.thiyyakat/Documents/workspace/form2/target/resolution-cache/reports/form2-form2_2.11-echo-sigar.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1893ms resolve - 65ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (3371ms resolve - 232ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

@@ -4,7 +4,7 @@
 		module="form2_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20150203135346"
+		publication="20150205123103"
 	>
 		<description>
 		form2
@@ -50,6 +50,6 @@
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.3.7" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-ws_2.11" rev="2.3.7" conf="compile->default(compile)"/>
 		<dependency org="org.webjars" name="angularjs" rev="1.3.0-beta.2" conf="compile->default(compile)"/>
-		<dependency org="org.webjars" name="requirejs" rev="2.1.11-1" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="jquery" rev="2.0.3" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

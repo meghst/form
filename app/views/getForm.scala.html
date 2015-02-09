@@ -7,23 +7,105 @@
 	<script src="@routes.Assets.at("javascripts/angular.min.js")" type="text/javascript"></script>
 	<script src="@routes.Assets.at("javascripts/app.js")" type="text/javascript"></script>
     <link href="@routes.Assets.at("stylesheets/bootstrap.min.css")" rel="stylesheet"></link>
+    <style type="text/css">
+      html, body, #map { height:300px; margin: 0; padding: 0;}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUb_b7CuVXOUuSwSo-ZK03fZbqSc2r3i0">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+    	 
+        var mapOptions = {
+          center: { lat: 21, lng: 78},
+          zoom: 5
+        };
+        
+        m=document.getElementById("map")        
+        map = new google.maps.Map(m,mapOptions);
+        
+        showMap() 
+      }
+      
+      function showMap()
+      {
+    	lat=parseFloat($("#latitude").val())
+    	lon=parseFloat($("#longitude").val())
+    	
+    	latlon= new google.maps.LatLng(lat,lon);
+    	marker = new google.maps.Marker({
+     		 position: latlon,
+		     map:map,
+      		title:"New Location" 
+  		});
+    	
+    	$("#map").show()
+    	$("html, body").animate({ scrollTop: $(document).height() }, 1000);
+    	
+    	bmap=document.getElementById("bMap");
+        bmap.innerHTML="Close Map"
+        bMap.setAttribute("onclick","closeMap()")
+       
+      }
+      
+      function closeMap()
+      {
+    	  marker.setMap(null)
+		
+      	$("#map").slideUp(1000)
+      	
+      	bmap=document.getElementById("bMap")
+      	bmap.setAttribute("onclick","showMap()")
+      	bmap.innerHTML="Show Map"      }
+   	
+    	
+    </script>
+    
+    
 </head>
 <body ng-app="sample" ng-controller="formController">
-		<div class="navbar navbar-default" ng-hide="show_form"> <button class="btn btn-default" ng-click="getForm()" >Create Serviceability</button></div>
-        
-            <form role="form" class="pull-center modal-body " style="text-align:center; width:50%">
+		<div ng-hide="show_form" class="panel">
+			<form role="form" class="container " style='text-align:center;width:50%'>
+				<div class="panel-heading " ><h4 >Choose Entity</h4></div>
+				<div class="panel-body form-group">
+					<select ng-model="selected" class="form-control"
+                		ng-options="opt as opt.label for opt in options">
+            		</select>
+            		</br>
+            		<button ng-click="getForm()" class="btn btn-success form-control">Create</button>
+            	</div>
+            </form>
+		</div>
+		
+			
+		<div class="panel ">
+            <form role="form" class="container"style=" text-align:center;width:50%;">
                 <div  ng-repeat="field in json" class="form-group panel panel-default ">
-                 	<div ng-if="field.type=='heading' class="panel-heading" ><h4 >{{field.value}} </h4></div>
                     <div ng-if="field.type=='heading'" class="panel-heading" ><h4 >{{field.value}} </h4></div>
                     <div class="form-group panel-body" ng-repeat="subfield in field.fields">
                     	<label for="{{subfield.name}}"class="col-lg-2 control-label">{{subfield.name}}</label>
                     	<div class="col-lg-10">
-                    		<input id="{{subfield.name}}"ng-if="subfield.type!='heading'"class="form-control" ng-attr-name="subfield.name" type="{{subfield.type}}"/>
+                    		<input id="{{subfield.name}}"ng-if="subfield.type=='String'"class="form-control" ng-attr-name="subfield.name" type="text"/>
+                    		<div ng-if="subfield.type=='Map'" class="form-group" >
+                    			<div>
+                    				<div class="form-group">
+                    					<label for="latitude" class="col-lg-2 control-label">Latitude</label>
+                    					<input id="latitude" class="form-control" type="number"/>
+                    				</div>
+                    				<div class="form-group">
+                    					<label for="longitude" class="col-lg-2 control-label">Longitude</label>
+                    					<input id="longitude" class="form-control" type="number"/>
+                    				</div>
+                    			</div>
+                    			<button class="btn btn-info" onclick="initialize()" id="bMap">View on Map</button>
+                    		</div>
                     	</div>
                     </div>     
                </div>
                <button ng-show="show_form" type='button' class='btn btn-default btn-sm'><span class='glyphicon glyphicon-send'></span> Submit </button>
             </form>
         </div>
+        <div id="map" style="display:none"></div>
+      
     </body>
 </html>

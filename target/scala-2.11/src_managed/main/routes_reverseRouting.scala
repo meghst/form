@@ -1,6 +1,6 @@
 // @SOURCE:/Users/meghana.thiyyakat/Documents/workspace/form2/conf/routes
-// @HASH:ba5bd0b740e9ab9bd3ca2a255b6040f5782f10f6
-// @DATE:Tue Feb 03 14:18:05 IST 2015
+// @HASH:5b9d41001663f1c90ae4b9761438c05ed0f501f9
+// @DATE:Mon Feb 09 10:48:33 IST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,15 +15,17 @@ import _root_.play.libs.F
 import Router.queryString
 
 
-// @LINE:9
-// @LINE:6
+// @LINE:18
+// @LINE:13
+// @LINE:11
+// @LINE:8
 package controllers {
 
-// @LINE:9
+// @LINE:18
 class ReverseAssets {
 
 
-// @LINE:9
+// @LINE:18
 def at(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -33,14 +35,30 @@ def at(file:String): Call = {
 }
                           
 
-// @LINE:6
+// @LINE:13
+// @LINE:11
+// @LINE:8
 class ReverseApplication {
 
 
-// @LINE:6
-def getjson(): Call = {
+// @LINE:8
+def getForm(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix)
+}
+                        
+
+// @LINE:13
+def getData(EntityName:String): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "getData/" + implicitly[PathBindable[String]].unbind("EntityName", dynamicString(EntityName)))
+}
+                        
+
+// @LINE:11
+def getEntities(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "getEntities")
 }
                         
 
@@ -50,16 +68,18 @@ def getjson(): Call = {
                   
 
 
-// @LINE:9
-// @LINE:6
+// @LINE:18
+// @LINE:13
+// @LINE:11
+// @LINE:8
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:9
+// @LINE:18
 class ReverseAssets {
 
 
-// @LINE:9
+// @LINE:18
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -73,16 +93,40 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:6
+// @LINE:13
+// @LINE:11
+// @LINE:8
 class ReverseApplication {
 
 
-// @LINE:6
-def getjson : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.getjson",
+// @LINE:8
+def getForm : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.getForm",
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + """"})
+      }
+   """
+)
+                        
+
+// @LINE:13
+def getData : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.getData",
+   """
+      function(EntityName) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "getData/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("EntityName", encodeURIComponent(EntityName))})
+      }
+   """
+)
+                        
+
+// @LINE:11
+def getEntities : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.getEntities",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "getEntities"})
       }
    """
 )
@@ -94,16 +138,18 @@ def getjson : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:9
-// @LINE:6
+// @LINE:18
+// @LINE:13
+// @LINE:11
+// @LINE:8
 package controllers.ref {
 
 
-// @LINE:9
+// @LINE:18
 class ReverseAssets {
 
 
-// @LINE:9
+// @LINE:18
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -112,13 +158,27 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
-// @LINE:6
+// @LINE:13
+// @LINE:11
+// @LINE:8
 class ReverseApplication {
 
 
-// @LINE:6
-def getjson(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.getjson(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "getjson", Seq(), "GET", """ Home page""", _prefix + """""")
+// @LINE:8
+def getForm(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.getForm(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "getForm", Seq(), "GET", """get create button""", _prefix + """""")
+)
+                      
+
+// @LINE:13
+def getData(EntityName:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.getData(EntityName), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "getData", Seq(classOf[String]), "GET", """get JSON template for "EntityName"""", _prefix + """getData/$EntityName<[^/]+>""")
+)
+                      
+
+// @LINE:11
+def getEntities(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.getEntities(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "getEntities", Seq(), "GET", """get all entity names""", _prefix + """getEntities""")
 )
                       
 

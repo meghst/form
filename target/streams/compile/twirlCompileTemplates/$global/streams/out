@@ -1,0 +1,4 @@
+[0m[[31merror[0m] [0m/Users/meghana.thiyyakat/Documents/workspace/form2/app/views/getForm.scala.html:12: Expected ')' but found 'EOF'[0m
+[0m[[31merror[0m] [0m</html>[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0m(compile:[31mtwirlCompileTemplates[0m) Twirl compilation failed[0m

@@ -3,7 +3,16 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.getjson()
+
+#get create button
+GET 	/							controllers.Application.getForm()
+
+#get all entity names
+GET		/getEntities				controllers.Application.getEntities()
+#get JSON template for "EntityName"
+GET		/getData/:EntityName		controllers.Application.getData(EntityName)
+
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
