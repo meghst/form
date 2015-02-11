@@ -8,12 +8,13 @@ app.controller("formController",function($scope,$http)
 	$scope.json=""
 	$scope.show=true
 	$scope.show_form=false
+	$scope.needMap=false
 	
 	//get options for entity names
 	var response=$http.get("/getEntities")
 	
 	response.success(function(data){
-		console.log(data);
+		//console.log(data);
 		select=document.getElementById("entityName");
 		data=data.split(",");
 		data.pop()
@@ -23,7 +24,7 @@ app.controller("formController",function($scope,$http)
 			{
 				$scope.options.push({"label":data[i],"value":data[i]})
 			}
-		console.log($scope.options)
+		//console.log($scope.options)
 		$scope.selected=$scope.options[1]
 	});
 	
@@ -36,14 +37,42 @@ app.controller("formController",function($scope,$http)
 			//console.log(JSON.parse(data))
 			form=[]
 			traverse(form,data.template,$scope.selected.label)
-			console.log(form)
+			//console.log(form)
 			$scope.json=form
 			$scope.show_form=true
-		
+			
 			
 			
 		} );
 	}
+	
+	$scope.initialize=function()
+	{
+		console.log("initialize")
+		var mapOptions = {
+		          center: { lat: 21, lng: 78},
+		          zoom: 5
+		        };
+		        m=document.getElementById("map")        
+		        $scope.map = new google.maps.Map(m,mapOptions);
+	}
+	
+	 $scope.showMap=function()
+     {
+		 console.log("showMap")
+		 lat=parseFloat($("#latitude").val())
+		 lon=parseFloat($("#longitude").val())
+   	
+		 latlon= new google.maps.LatLng(lat,lon);
+		 marker = new google.maps.Marker({
+    		 position: latlon,
+		     map:$scope.map,
+     		title:"New Location" 
+ 		});
+   	
+     }
+	
+	
 });
 
 function traverse(form,o,heading) {
